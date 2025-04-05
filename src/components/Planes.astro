@@ -1,14 +1,14 @@
 ---
 
 const pFamiliares=[
-    {id:1,plan:"700"},
-    {id:1,plan:"800"},
-    {id:1,plan:"900"},
+    {id:1,plan:"Familiar",mbps:700,ruta:"/src/assets/planes/wifi.svg"},
+    {id:2,plan:"Familiar",mbps:800,ruta:"/src/assets/planes/wifi.svg"},
+    {id:3,plan:"Familiar",mbps:900,ruta:"/src/assets/planes/wifi.svg"},
 ]
 
 const pPremiun=[
-    {id:1,plan:"1000",router:1},
-    {id:1,plan:"1000",router:2},
+    {id:1,plan:"Premiun",mbps:1000,router:1,ruta:"/src/assets/planes/wifi.svg"},
+    {id:1,plan:"Premiun",mbps:1000,router:2,ruta:"/src/assets/planes/wifi.svg"},
 ]
 
 const pilares=[
@@ -21,16 +21,47 @@ const pilares=[
 
 ---
 
-<div class="mt-10 mb-10 pt-10 pb-14 font-semibold">
+<div class="mt-10 mb-1 pt-10 pb-4 font-semibold">
 
     <div class="p-4 text-center">
         <h2 class="text-6xl font-bold text-orange-500">INSTALACIÓN GRATIS</h2>
         <h3 class="bg-blue-700 w-1/5 font-bold text-white rounded-3xl block m-auto mt-2">DUPLICAMOS TU VELOCIDAD POR 6 MESES</h3>
     </div>
 
+    <div class="p-2 flex flex-wrap justify-center gap-5 mt-5">
+
+        {pFamiliares.map((planF,index)=>(
+            <div id="planclick" class="border-2 border-orange-500 p-4 rounded-xl cursor-pointer hover:scale-102 hover:border-blue-600 hover:bg-gray-100 text-orange-600  hover:text-blue-600" key={index}>
+                <img src={planF.ruta} alt="">
+
+                <div class="p-2 text-center font-semibold ">
+                    <h3>Plan {planF.plan}</h3>
+                    <h3>{planF.mbps} Mbps</h3>
+                </div>
+
+            </div>
+        ))}
+
+        {pPremiun.map((planP,index)=>(
+            <div class="border-2 border-orange-500 p-4 rounded-xl text-center cursor-pointer hover:scale-102 hover:border-blue-600 hover:bg-gray-100 text-orange-600 hover:text-blue-600" key={index}>
+                <img src={planP.ruta} alt="">
+
+                <div class="p-2 text-center font-semibold">
+                    <h3>Plan {planP.plan}</h3>
+                    <h3>{planP.mbps} Mbps</h3>
+                </div>
+                <div class="relative">
+                    <span class="absolute bg-cyan-500 p-1.5 rounded-xl text-white flex justify-center left-4">+{planP.router} Router</span>
+                </div>
+            </div>
+        ))}
+
+
+    </div>
+
     <div class="flex justify-center p-4 text-center pt-12">
 
-        <div class="rounded-3xl w-2/5 border-blue-700 border-4 p-4 shadow-2xl shadow-black">
+        <div class="rounded-3xl w-2/5 border-blue-700 border-4 p-4 shadow-xs shadow-black">
     
             <h1 class="text-4xl font-bold text-blue-700">100% Fibra</h1>
             <p class="text-3xl font-bold text-blue-700">Instalación Gratis</p>
@@ -86,6 +117,7 @@ const pilares=[
 
 </div>
 
+<script src="/src/script/planes.js"></script>
 
 
 
