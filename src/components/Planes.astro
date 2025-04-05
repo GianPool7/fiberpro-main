@@ -1,0 +1,91 @@
+---
+
+const pFamiliares=[
+    {id:1,plan:"700"},
+    {id:1,plan:"800"},
+    {id:1,plan:"900"},
+]
+
+const pPremiun=[
+    {id:1,plan:"1000",router:1},
+    {id:1,plan:"1000",router:2},
+]
+
+const pilares=[
+    {id:1,texto:"100% Fibra Óptica",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/fibraorange.png"},
+    {id:2,texto:"Internet Limitado y simétrico",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/connectionorange.png"},
+    {id:3,texto:"Mayor velocidad",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/speedorange.png"},
+]
+
+
+
+---
+
+<div class="mt-10 mb-10 pt-10 pb-14 font-semibold">
+
+    <div class="p-4 text-center">
+        <h2 class="text-6xl font-bold text-orange-500">INSTALACIÓN GRATIS</h2>
+        <h3 class="bg-blue-700 w-1/5 font-bold text-white rounded-3xl block m-auto mt-2">DUPLICAMOS TU VELOCIDAD POR 6 MESES</h3>
+    </div>
+
+    <div class="flex justify-center p-4 text-center pt-12">
+
+        <div class="rounded-3xl w-2/5 border-blue-700 border-4 p-4 shadow-2xl shadow-black">
+    
+            <h1 class="text-4xl font-bold text-blue-700">100% Fibra</h1>
+            <p class="text-3xl font-bold text-blue-700">Instalación Gratis</p>
+    
+            <div class="flex justify-center gap-6 p-4">
+    
+                <div class="text-base/12 p-4 w-1/2 grid grid-cols-1 gap-2">
+                    <p class="line-through text-3xl">200 mbps</p>
+                    <h2 class="font-extrabold text-blue-700 text-6xl">400 Mbps</h2>
+                    <p class="text-2xl">Duplica tu velocidad</p>
+                    <p class="text-2xl">X6 meses</p>
+    
+                    <div class="block m-auto w-3/4">
+                        <h2 class="bg-orange-500 text-4xl p-2 rounded-3xl font-bold text-white w-full">S/70.00</h2>
+                        <span class="bg-cyan-300 rounded-2xl p-2">Mensuales</span>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="grid grid-cols-1 gap-4 p-4 w-1/2">
+    
+                    {pilares.map((itemPilares, index) => (
+                        <div class="rounded-2xl p-2 w-full flex justify-center gap-3 border-2 border-orange-500" key={itemPilares.id || index}>
+                        
+                          <div class="p-2 flex justify-center w-2/5">
+                            {/* Verifica que itemPilares.img exista antes de usarla */}
+                            <img class="w-3/4" src={itemPilares.img || 'default-image.jpg'} alt={`Imagen de ${itemPilares.texto || 'Elemento'}`} />
+                          </div>
+                          
+                          <div class="flex justify-center items-center p-2">
+                            <p>{itemPilares.texto || 'Texto no disponible'}</p>
+                          </div>
+                      
+                        </div>
+                      ))}
+                      
+    
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="block m-auto p-2 w-1/2 bg-blue-700 rounded-3xl shadow-2xs shadow-black cursor-pointer">
+                <h2 class="font-bold text-3xl text-white">Quiero este plan!!</h2>
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+</div>
+
+
+
+

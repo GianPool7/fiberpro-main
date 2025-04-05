@@ -1,0 +1,30 @@
+---
+
+const pilaresFP=[
+    {id:1,nombre:"VELOCIDAD SIMÉTRICA",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/speed.png"},
+    {id:1,nombre:"ALCANCE 2.4 GHZ Y 5 GHZ",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/alcance.png"},
+    {id:1,nombre:"100% FIBRA ÓPTICA",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/fibra.png"},
+    {id:1,nombre:"CONEXIÓN MULTIDISPOSITIVO",img:"https://fiberpro.com.pe/wp-content/uploads/2024/04/conexion.png"},
+]
+
+---
+
+<div>
+    <div class="p-2 w-full flex justify-center">
+
+        <div class="flex justify-around p-4 w-3/5" >
+
+            {pilaresFP.map((itemFP)=>(
+                <div class="border-4 rounded-3xl p-4 w-60 shadow-2xl hover:scale-105">
+                    <img transition:animate="slide" class="block m-auto" src={itemFP.img} alt="">
+                    <p class="text-center p-2 mt-3">{itemFP.nombre}</p>
+                </div>
+            ))}
+
+
+    
+        </div>
+
+    </div>
+
+</div>

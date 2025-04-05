@@ -1,0 +1,34 @@
+---
+const beneficiosDatos=[
+    {id:1,titulo:"Descargas y Carga Ilimitadas",txt:"asd"},
+    {id:2,titulo:"Velocidad Garantizada",txt:"asdasdad."},
+    {id:3,titulo:"100% Fibra Óptica",txt:"Nasdasdasd."},
+    {id:4,titulo:"Descargas y Carga Ilimitadas",txt:"asd"},
+    {id:5,titulo:"Velocidad Garantizada",txt:"asdasdad."},
+    {id:6,titulo:"100% Fibra Óptica",txt:"Nasdasdasd."},
+]
+
+
+---
+
+<div class="p-2 w-full flex justify-center mb-10">
+
+    <div class="bg-green-600 p-2 flex justify-center w-2/3">
+
+        <div class="bg-amber-300 grid grid-cols-3 gap-4 p-2 w-full text-center">
+
+            {beneficiosDatos.map((beneficios)=>(
+                <div class="bg-purple-400 rounded-2xl p-4" key={beneficios.id}>
+                    <h3 class="font-bold text-2xl">{beneficios.titulo}</h3>
+                    <p>{beneficios.txt}</p>
+                </div>
+            ))}    
+        
+        </div>
+    
+
+    </div>
+
+
+</div>
+

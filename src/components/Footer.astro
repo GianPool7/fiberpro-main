@@ -1,0 +1,124 @@
+---
+import "../styles/global.css";
+
+const menu=[
+    {id:1,nombre:"Planes",ruta:"/planes"},
+    {id:2,nombre:"Cobertura",ruta:"/cobertura"},
+    {id:3,nombre:"¿Por qué Fibra Óptica?",ruta:"/por-que-fibra-optica"},
+    {id:4,nombre:"Blog de Tecnología",ruta:"/blog"},
+    {id:5,nombre:"Consulta",ruta:"/contacto"},
+    {id:6,nombre:"Nosotros",ruta:"/nosotros"},
+]
+
+const reclamos=[
+    {id:1,nombre:"Solicitudes en línea",ruta:"/solicitudes"},
+    {id:2,nombre:"Atención de Reclamos",ruta:"/atencion"},
+
+]
+
+const infoAbonados=[
+    {id:1,nombre:"Condiciones de uso",ruta:""},
+    {id:2,nombre:"Política de protección de datos",ruta:""},
+    {id:3,nombre:"Preguntas frecuentes",ruta:""},
+    {id:4,nombre:"Promociones",ruta:""},
+]
+
+const direcion="Urb. Santo Domingo 2da Etapa,Mz. L LT. 48 – Carabayllo,Lima";
+
+const atencion="8:00 a 17:00 de Lunes a Sábados";
+
+const correo="a@gmail.com"
+
+---
+
+<div class="flex justify-center w-full bg-blue-700 text-white">
+
+    <div class="w-3/5 flex justify-around">
+
+        <div class="">
+            <img src="" alt="">
+        </div>
+
+        <div class="">
+
+            <h4 class="">Menú</h4>
+
+            <div class="">
+                {menu.map((items)=>(
+                    
+                    <li class="list-none">
+                        <a href={items.ruta}>{items.nombre}</a>
+                    </li>
+                    
+                ))}
+            </div>
+
+
+            <h4>Atención de Reclamos y Solicitudes en Línea</h4>
+
+            <div>
+
+                {reclamos.map((itemsReclamos)=>(
+
+                    <li class="list-none">
+                        <a href={itemsReclamos.ruta}>{itemsReclamos.nombre}</a>
+                    </li>
+
+    
+                ))}
+                
+            </div>
+
+
+
+        </div>
+
+        <div class="">
+
+            <h4>Información de usuarios y abonados</h4>
+
+            <div>
+                {infoAbonados.map((abonados)=>(
+                    <li>
+                        <a href={abonados.ruta}>{abonados.nombre}</a>
+                    </li>
+                ))}
+            </div>
+
+        </div>
+
+        <div>
+
+            <div>
+                <h4>Dirección</h4>
+
+                <div>
+                    <p>{direcion}</p>
+                </div>
+            </div>
+
+            <div>
+                <h4>Horario de atención</h4>
+
+                <div>
+                    <p>{atencion}</p>
+                </div>
+
+                <h4>Email</h4>
+
+                <p>{correo}</p>
+
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <img src="" alt="">
+        </div>
+
+    </div>
+
+
+</div>
