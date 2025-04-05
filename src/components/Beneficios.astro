@@ -1,13 +1,4 @@
 ---
-const beneficiosDatos=[
-    {id:1,titulo:"Descargas y Carga Ilimitadas",txt:"asd"},
-    {id:2,titulo:"Velocidad Garantizada",txt:"asdasdad."},
-    {id:3,titulo:"100% Fibra Óptica",txt:"Nasdasdasd."},
-    {id:4,titulo:"Descargas y Carga Ilimitadas",txt:"asd"},
-    {id:5,titulo:"Velocidad Garantizada",txt:"asdasdad."},
-    {id:6,titulo:"100% Fibra Óptica",txt:"Nasdasdasd."},
-]
-
 
 ---
 
@@ -15,14 +6,41 @@ const beneficiosDatos=[
 
     <div class="bg-green-600 p-2 flex justify-center w-2/3">
 
-        <div class="bg-amber-300 grid grid-cols-3 gap-4 p-2 w-full text-center">
+        <div class="bg-amber-300 grid grid-cols-3 grid-rows-4 gap-2 p-2 w-full text-center">
 
-            {beneficiosDatos.map((beneficios)=>(
-                <div class="bg-purple-400 rounded-2xl p-4" key={beneficios.id}>
-                    <h3 class="font-bold text-2xl">{beneficios.titulo}</h3>
-                    <p>{beneficios.txt}</p>
-                </div>
-            ))}    
+            <div class="row-span-1 col-span-3 bg-red-600">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
+            <div class="row-start-2 row-span-2 bg-pink-500">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
+
+            <div class="bg-green-500">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
+
+            <div class="col-start-3 col-span-1 row-start-2 row-span-2 bg-purple-800">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
+
+            <div class="col-start-2 col-span-1 bg-blue-700">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
+            <div class="col-span-3 bg-gray-500">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum molestias iusto ea accusamus fugiat error recusandae neque provident similique!</p>
+            </div>
+
         
         </div>
     

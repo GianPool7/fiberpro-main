@@ -31,37 +31,37 @@ const correo="a@gmail.com"
 
 ---
 
-<div class="flex justify-center w-full bg-blue-700 text-white">
+<div class="flex justify-center w-full bg-blue-700 text-white p-2">
 
-    <div class="w-3/5 flex justify-around">
+    <div class="w-3/5 flex justify-around gap-5">
 
-        <div class="">
-            <img src="" alt="">
+        <div class="p-2">
+            <img class="w-3/4 p-2 size-62 block m-auto" src="/src/assets/logos/fiberpro.svg" alt="">
         </div>
 
-        <div class="">
+        <div class="w-3/4 p-2">
 
-            <h4 class="">Menú</h4>
+            <h4 class="font-bold border-b-4 text-black">Menú</h4>
 
-            <div class="">
+            <div class="text-base/6">
                 {menu.map((items)=>(
                     
                     <li class="list-none">
-                        <a href={items.ruta}>{items.nombre}</a>
+                        <a class="font-semibold hover:text-black" href={items.ruta}>{items.nombre}</a>
                     </li>
                     
                 ))}
             </div>
 
 
-            <h4>Atención de Reclamos y Solicitudes en Línea</h4>
+            <h4 class="border-b-4 font-bold text-black">Atención de Reclamos y Solicitudes en Línea</h4>
 
-            <div>
+            <div class="text-base/6">
 
                 {reclamos.map((itemsReclamos)=>(
 
                     <li class="list-none">
-                        <a href={itemsReclamos.ruta}>{itemsReclamos.nombre}</a>
+                        <a class="font-semibold hover:text-black" href={itemsReclamos.ruta}>{itemsReclamos.nombre}</a>
                     </li>
 
     
@@ -73,40 +73,40 @@ const correo="a@gmail.com"
 
         </div>
 
-        <div class="">
+        <div class="w-3/4">
 
-            <h4>Información de usuarios y abonados</h4>
+            <h4 class="border-b-4 font-bold text-black">Información de usuarios y abonados</h4>
 
-            <div>
+            <div class="text-base/6">
                 {infoAbonados.map((abonados)=>(
-                    <li>
-                        <a href={abonados.ruta}>{abonados.nombre}</a>
+                    <li class="list-none">
+                        <a class="font-semibold hover:text-black" href={abonados.ruta}>{abonados.nombre}</a>
                     </li>
                 ))}
             </div>
 
         </div>
 
-        <div>
+        <div class="w-3/4">
 
             <div>
-                <h4>Dirección</h4>
+                <h4 class="border-b-4 font-bold text-black">Dirección</h4>
 
-                <div>
-                    <p>{direcion}</p>
+                <div class="text-base/6">
+                    <p class="font-semibold">{direcion}</p>
                 </div>
             </div>
 
             <div>
-                <h4>Horario de atención</h4>
+                <h4 class="border-b-4 font-bold text-black mt-5">Horario de atención</h4>
 
-                <div>
-                    <p>{atencion}</p>
+                <div class="text-base/6">
+                    <p class="font-semibold">{atencion}</p>
                 </div>
 
-                <h4>Email</h4>
+                <h4 class="border-b-4 font-bold text-black mt-5">Email</h4>
 
-                <p>{correo}</p>
+                <p class="font-semibold">{correo}</p>
 
             </div>
 
@@ -114,8 +114,8 @@ const correo="a@gmail.com"
 
         </div>
 
-        <div>
-            <img src="" alt="">
+        <div class="w-3/4">
+            <img src="https://portal.mtc.gob.pe/images/logo.png" alt="">
         </div>
 
     </div>
