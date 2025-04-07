@@ -33,35 +33,35 @@ const correo="a@gmail.com"
 
 <div class="flex justify-center w-full bg-blue-700 text-white p-2">
 
-    <div class="w-3/5 flex justify-around gap-5">
+    <div class="w-3/5 flex justify-center gap-10">
 
-        <div class="p-2">
-            <img class="w-3/4 p-2 size-62 block m-auto" src="/src/assets/logos/fiberpro.svg" alt="">
+        <div class="">
+            <img class="w-full size-80 block m-auto" src="/src/assets/logos/fiberpro.svg" alt="">
         </div>
 
         <div class="w-3/4 p-2">
 
-            <h4 class="font-bold border-b-4 text-black">Menú</h4>
+            <h4 class="font-bold border-b-4 ">Menú</h4>
 
-            <div class="text-base/6">
+            <div class="text-base/6 mt-2">
                 {menu.map((items)=>(
                     
                     <li class="list-none">
-                        <a class="font-semibold hover:text-black" href={items.ruta}>{items.nombre}</a>
+                        <a class="" href={items.ruta}>{items.nombre}</a>
                     </li>
                     
                 ))}
             </div>
 
 
-            <h4 class="border-b-4 font-bold text-black">Atención de Reclamos y Solicitudes en Línea</h4>
+            <h4 class="border-b-4 font-bold mt-2">Atención de Reclamos y Solicitudes en Línea</h4>
 
-            <div class="text-base/6">
+            <div class="text-base/6 mt-2">
 
                 {reclamos.map((itemsReclamos)=>(
 
                     <li class="list-none">
-                        <a class="font-semibold hover:text-black" href={itemsReclamos.ruta}>{itemsReclamos.nombre}</a>
+                        <a class="" href={itemsReclamos.ruta}>{itemsReclamos.nombre}</a>
                     </li>
 
     
@@ -75,12 +75,12 @@ const correo="a@gmail.com"
 
         <div class="w-3/4">
 
-            <h4 class="border-b-4 font-bold text-black">Información de usuarios y abonados</h4>
+            <h4 class="border-b-4 font-bold">Información de usuarios y abonados</h4>
 
-            <div class="text-base/6">
+            <div class="text-base/6 mt-3">
                 {infoAbonados.map((abonados)=>(
                     <li class="list-none">
-                        <a class="font-semibold hover:text-black" href={abonados.ruta}>{abonados.nombre}</a>
+                        <a class="" href={abonados.ruta}>{abonados.nombre}</a>
                     </li>
                 ))}
             </div>
@@ -90,23 +90,23 @@ const correo="a@gmail.com"
         <div class="w-3/4">
 
             <div>
-                <h4 class="border-b-4 font-bold text-black">Dirección</h4>
+                <h4 class="border-b-4 font-bold">Dirección</h4>
 
-                <div class="text-base/6">
-                    <p class="font-semibold">{direcion}</p>
+                <div class="text-base/6 mt-2">
+                    <p class="">{direcion}</p>
                 </div>
             </div>
 
             <div>
-                <h4 class="border-b-4 font-bold text-black mt-5">Horario de atención</h4>
+                <h4 class="border-b-4 font-bold mt-5">Horario de atención</h4>
 
-                <div class="text-base/6">
-                    <p class="font-semibold">{atencion}</p>
+                <div class="text-base/6 mt-2">
+                    <p class="">{atencion}</p>
                 </div>
 
-                <h4 class="border-b-4 font-bold text-black mt-5">Email</h4>
+                <h4 class="border-b-4 font-bold mt-5">Email</h4>
 
-                <p class="font-semibold">{correo}</p>
+                <p class="mt-2">{correo}</p>
 
             </div>
 
@@ -114,8 +114,8 @@ const correo="a@gmail.com"
 
         </div>
 
-        <div class="w-3/4">
-            <img src="https://portal.mtc.gob.pe/images/logo.png" alt="">
+        <div class="">
+            <img class="w-full" src="https://portal.mtc.gob.pe/images/logo.png" alt="">
         </div>
 
     </div>
