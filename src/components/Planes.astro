@@ -24,8 +24,8 @@ const pilares=[
 <div class="mt-10 mb-1 pt-10 pb-4 font-semibold">
 
     <div class="p-4 text-center">
-        <h2 class="text-6xl font-bold text-orange-500">INSTALACIÓN GRATIS</h2>
-        <h3 class="bg-blue-700 w-1/5 font-bold text-white rounded-3xl block m-auto mt-2">DUPLICAMOS TU VELOCIDAD POR 6 MESES</h3>
+        <h1 class="xl:text-6xl font-bold text-orange-500 text-5xl">INSTALACIÓN GRATIS</h1>
+        <h3 class="bg-blue-700 xl:w-1/4 w-1/2 font-bold text-white rounded-3xl block m-auto mt-2 xl:text-1xl p-2">DUPLICAMOS TU VELOCIDAD POR 6 MESES</h3>
     </div>
 
     <div class="p-2 flex flex-wrap justify-center gap-5 mt-5" id="planclick">
@@ -71,35 +71,35 @@ const pilares=[
 
         <div class="flex justify-center p-4 text-center pt-12">
 
-            <div class="rounded-3xl w-2/5 border-blue-700 border-4 p-4 shadow-xs shadow-black">
+            <div class="rounded-3xl xl:w-2/5 w-4/5 border-blue-700 border-4 p-2 shadow-xs shadow-black">
 
                 <h1 class="text-4xl font-bold text-blue-700">100% Fibra</h1>
                 <p class="text-3xl font-bold text-blue-700">Instalación Gratis</p>
 
-                <div class="flex justify-center gap-6 p-4">
+                <div class="lg:flex justify-between gap-2 lg:p-2 xl:w-full w-4/5 block m-auto">
 
-                    <div class="text-base/12 p-4 w-3/5 grid grid-cols-1 gap-2">
+                    <div class="text-base/12 text-center p-4 xl:w-1/2 w-full grid grid-cols-1 gap-2">
                         <p id="cantidadAnterior" class="line-through text-3xl">200 mbps</p>
                         <h2 id="cantidadActual" class="font-extrabold text-blue-700 text-6xl">400 Mbps</h2>
                         <p class="text-2xl">Duplica tu velocidad</p>
                         <p class="text-2xl">X6 meses</p>
 
                         <div class="block m-auto w-3/4">
-                            <h2 id="precio" class="bg-orange-500 text-4xl p-2 rounded-3xl font-bold text-white w-full">S/70.00</h2>
+                            <h2 id="precio" class="bg-orange-500 lg:text-4xl text-2xl lg:p-2 p-1 rounded-3xl font-bold text-white w-full">S/70.00</h2>
                             <span class="bg-cyan-400 rounded-2xl p-2 text-white">Mensuales</span>
                         </div>
 
 
                     </div>
 
-                    <div class="grid grid-cols-1 gap-4 p-4 w-1/2">
+                    <div class="lg:grid lg:grid-cols-1 gap-4 lg:p-4 p-1 xl:w-1/2 w-full flex flex-wrap justify-center ">
 
                         {pilares.map((itemPilares, index) => (
-                            <div class="rounded-2xl p-2 w-full flex justify-center gap-3 border-2 border-orange-500" key={itemPilares.id || index}>
+                            <div class="rounded-2xl p-2 xl:w-full w-4/5 xl:flex xl:justify-center block m-auto gap-3 border-2 border-orange-500" key={itemPilares.id || index}>
                             
-                            <div class="p-2 flex justify-center w-2/5">
+                            <div class="xl:p-2 xl:flex xl:justify-center xl:w-1/2 w-1/3 block m-auto">
                                 {/* Verifica que itemPilares.img exista antes de usarla */}
-                                <img class="w-3/4" src={itemPilares.img || 'default-image.jpg'} alt={`Imagen de ${itemPilares.texto || 'Elemento'}`} />
+                                <img class="xl:w-3/4" src={itemPilares.img || 'default-image.jpg'} alt={`Imagen de ${itemPilares.texto || 'Elemento'}`} />
                             </div>
                             
                             <div class="flex justify-center items-center p-2 text-blue-700">
@@ -117,8 +117,8 @@ const pilares=[
 
 
                 <a href="" target="_blank" id="link">
-                    <div class="block m-auto p-2 w-1/2 bg-blue-700 rounded-3xl shadow-2xs shadow-black cursor-pointer  hover:scale-105">
-                        <h2 class="font-bold text-3xl text-white">Quiero este plan!!</h2>
+                    <div class="block m-auto p-2 xl:w-1/2 w-5/6 bg-blue-700 rounded-3xl shadow-2xs shadow-black cursor-pointer  hover:scale-105">
+                        <h2 class="font-bold xl:text-3xl text-2xl text-white">Quiero este plan!!</h2>
                     </div>
                 </a>
 

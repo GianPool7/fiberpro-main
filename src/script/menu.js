@@ -11,6 +11,7 @@ const responsivo=document.getElementById('btnResponsivo').addEventListener('clic
     
     menu.classList.remove('hidden');
     cerrarHamburguesa.classList.remove('hidden');
+    cerrarHamburguesa.classList.add('flex');
     hamburguesaIcono.classList.toggle('hidden')
 
 })
