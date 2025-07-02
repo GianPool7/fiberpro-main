@@ -95,16 +95,16 @@ const pilares=[
                     <div class="lg:grid lg:grid-cols-1 gap-4 lg:p-4 p-1 xl:w-1/2 w-full flex flex-wrap justify-center ">
 
                         {pilares.map((itemPilares, index) => (
-                            <div class="rounded-2xl p-2 xl:w-full w-4/5 xl:flex xl:justify-center block m-auto gap-3 border-2 border-orange-500" key={itemPilares.id || index}>
+                            <div class="rounded-2xl w-4/5 p-2 lg:w-full sm:flex block lg:justify-center m-auto gap-3 border-2 border-orange-500" key={itemPilares.id || index}>
                             
-                            <div class="xl:p-2 xl:flex xl:justify-center xl:w-1/2 w-1/3 block m-auto">
-                                {/* Verifica que itemPilares.img exista antes de usarla */}
-                                <img class="xl:w-3/4" src={itemPilares.img || 'default-image.jpg'} alt={`Imagen de ${itemPilares.texto || 'Elemento'}`} />
-                            </div>
-                            
-                            <div class="flex justify-center items-center p-2 text-blue-700">
-                                <p>{itemPilares.texto || 'Texto no disponible'}</p>
-                            </div>
+                                <div class="xl:p-2 xl:flex xl:justify-center xl:w-1/2 block m-auto w-full">
+                                    {/* Verifica que itemPilares.img exista antes de usarla */}
+                                    <img class="xl:w-3/4" src={itemPilares.img || 'default-image.jpg'} alt={`Imagen de ${itemPilares.texto || 'Elemento'}`} />
+                                </div>
+                                
+                                <div class="flex justify-center items-center p-2 text-blue-700 xl:w-1/2 w-full">
+                                    <p>{itemPilares.texto || 'Texto no disponible'}</p>
+                                </div>
                         
                             </div>
                         ))}
