@@ -6,6 +6,7 @@ import Cliente from '../components/Cliente.astro';
 import Cobertura from '../components/Cobertura.astro';
 import Pagos from '../components/Pagos.astro';
 import Beneficios from '../components/Beneficios.astro';
+import Plan from '../components/Plan.jsx';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -16,6 +17,9 @@ import Beneficios from '../components/Beneficios.astro';
 	<Banner/>
 
 	<Planes/>
+
+	<!-- Aquí va tu componente React -->
+	<Plan client:load />
 
 	<Cobertura/>
 
