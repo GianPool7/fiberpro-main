@@ -26,7 +26,7 @@ const redesSociales=[
 
 ---
 
-<div class="bg-gradient-to-r from-black to-blue-600 sticky top-0 z-10">
+<div class="bg-gradient-to-r from-black to-blue-600 fixed z-50 w-full">
 
     <div class="w-full flex justify-center">
 
@@ -74,24 +74,24 @@ const redesSociales=[
         
     <div class="bg-white p-1 w-full flex xl:justify-center justify-between h-20 shadow-2xl">
         
-        <div class="xl:w-2/3 w-full justify-between p-4 flex xl:justify-around text-2xl font-bold text-blue-700 ">
+        <div class="xl:w-2/3 w-full justify-between p-4 flex xl:justify-around text-2xl font-bold text-blue-700">
 
             <div class="xl:w-1/6 flex xl:justify-center justify-between items-center">
                 <a href="/" class="xl:w-5/6">
-                    <img class="block m-auto xl:w-auto w-1/2" src="/logos/AZUL.svg" alt="">
+                    <img class="block m-auto xl:w-auto w-1/2 md:w-1/2" src="/logos/AZUL.svg" alt="">
                 </a>
 
             </div>
 
-            <div class="flex">
+            <div class="flex items-center">
                 {/* ICONO PARA ABRIR */}
                 <button class="xl:hidden flex justify-center items-center" id="btnResponsivo">
-                    <img class="p-2 size-18" src="/public/hamburguesa/menu-hamburguesa.svg" alt="" id="hamburguesa">
+                    <img class="p-0 size-16" src="/menu/menu.webp" alt="" id="hamburguesa">
                 </button>
 
                 {/* PARA CERRAR  */}
                 <button class="hidden justify-center items-center" id="cerrar-hamburguesa">
-                    <img class="p-2 size-18" src="/public/hamburguesa/X.svg" alt="" id="cerrarH">
+                    <img class="p-0 size-16" src="/menu/x.webp" alt="" id="cerrarH">
                 </button>
             </div>
 

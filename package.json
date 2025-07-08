@@ -13,6 +13,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.6.0",
     "autoprefixer": "^10.4.21",
+    "gsap": "^3.13.0",
     "postcss": "^8.5.6",
     "swiper": "^11.2.10",
     "swiper-src": "github:nolimits4web/swiper",
