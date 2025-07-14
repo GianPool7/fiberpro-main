@@ -6,7 +6,6 @@ body {
 }
 
 .swiper {
-  width: 50%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -15,7 +14,6 @@ body {
   background-position: center;
   background-size: cover;
   width: 500px;
-  height: 620px;
   padding: 2px;
 }
 

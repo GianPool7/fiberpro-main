@@ -45,10 +45,10 @@ export default function SwiperSlider() {
       }}
       pagination={{ clickable: true }}
       modules={[EffectCoverflow, Pagination]}
-      className=""
+      className="w-1/2 "
     >
       {pFamiliares.map((item) => (
-        <SwiperSlide key={item.id} className='bg-center bg-cover p-2'>
+        <SwiperSlide key={item.id} className='bg-center bg-cover p-2 h-3/4'>
 
             <div className="absolute -top-6 w-full p-2 flex justify-center">
                 <span className="bg-cyan-400 text-white font-bold p-2 rounded-full">Plan {item.plan}</span>
