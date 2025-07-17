@@ -40,10 +40,11 @@ export default function Banners() {
             <img src="banners/banner.jpg" alt="" className=''/>
         </SwiperSlide>
         <SwiperSlide>
-            <img src="banners/SORTEO.jpg" alt="" />
+            <img src="banners/abril.jpg" alt="" />
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+            <img src="banners/abril-2.jpg" alt="" />
+        </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>

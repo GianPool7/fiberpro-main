@@ -1,0 +1,142 @@
+---
+
+
+---
+
+<h2>¿Dónde puedo pagar mi recibo?</h2>
+
+
+<div class="pt-14 flex justify-center">
+
+
+    <div class="flex justify-between gap-4 p-2 w-1/2">
+
+        <div id="billetera" class="font-bold p-4 w-1/5 text-center shadow-xl rounded-2xl cursor-pointer border-4 border-blue-700">
+            <img class="size-24 p-2 block m-auto" src="https://cdn-icons-png.flaticon.com/512/116/116369.png" alt="">
+            <p class="">Billetera Digital</p>
+        </div>
+
+        <div id="bancos" class="font-bold p-4 w-1/5 text-center shadow-2xl rounded-2xl cursor-pointer">
+            <img class="size-24 p-2 block m-auto" src="https://cdn-icons-png.flaticon.com/512/116/116369.png" alt="">
+            <p class="">Bancas</p>
+        </div>
+
+        <div id="presencial" class="font-bold p-4 w-1/5 text-center shadow-2xl rounded-2xl cursor-pointer">
+            <img class="size-24 p-2 block m-auto" src="https://cdn-icons-png.flaticon.com/512/116/116369.png" alt="">
+            <p class="">Presencial</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="mt-20 mb-20">
+
+    <div id="yape" class="p-2 hidden justify-center">
+
+        <div class="w-1/2 flex justify-center">
+            <div class="flex justify-center gap-4 w-full">
+                <div class="w-full">
+                    <img src="https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-cell-phone-mockup-png-image_6584021.png" alt="">
+                </div>
+                <div class="w-full">
+                    <div>
+                        <h2 class="font-bold text-2xl text-center p-4 text-orange-600">Instrucciones:</h2>
+                    </div>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bcp" class="p-2 hidden justify-center">
+
+        <div class="w-1/2 flex justify-center">
+            <div class="flex justify-center gap-4 w-full">
+                <div class="w-full">
+                    <img src="https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-cell-phone-mockup-png-image_6584021.png" alt="">
+                </div>
+                <div class="w-full">
+                    <div>
+                        <h2 class="font-bold text-2xl text-center p-4 text-orange-600">Instrucciones:</h2>
+                    </div>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                        <p>1. Lorem.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="aqui" class="p-2 hidden justify-center">
+
+        <div class="w-1/2 flex justify-center">
+            <div class="flex justify-center gap-4 w-full">
+                <div class="w-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.332493416081!2d-77.03692562397165!3d-11.881920038855434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1caa600f1c5%3A0xd6a634c0a5245ab3!2sFiberPRO!5e0!3m2!1sen!2spe!4v1752697698604!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="w-full">
+                    <div>
+                        <h2 class="font-bold text-2xl text-center p-4 text-orange-600">Dirección:</h2>
+                    </div>
+                    <div>
+                        <p>FiberPRO</p>
+                        <span>Urb Santo Domingo 2DA ETAPA AV. L MZ. L LT. 48, Carabayllo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+    const billetera=document.getElementById("billetera")
+
+    billetera?.addEventListener('click',()=>{
+        const plin=document.getElementById("yape");
+        plin.style.display="flex";
+        bcp.style.display="none";
+        aqui.style.display="none";
+    })
+
+    const bancos=document.getElementById("bancos")
+
+    bancos?.addEventListener('click',()=>{
+        const bcp=document.getElementById("bcp");
+        bcp.style.display="flex";
+        plin.style.display="none";
+        aqui.style.display="none";
+
+    })
+
+    const presencial=document.getElementById("presencial")
+
+    presencial?.addEventListener('click',()=>{
+        const aqui=document.getElementById("aqui");
+        aqui.style.display="flex";
+        bcp.style.display="none";
+        plin.style.display="none";
+
+    })
+
+</script>
+
